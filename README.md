@@ -79,4 +79,8 @@ The Architecture introduces a new way of creating React Components,splitting the
 * Every file that corresponds to a route must be named `page.js` or `page.tsx`.
 * Evry folder corresponds to a path segment in the bowser URL.
 
+* `Routing`
 ![alt text](image.png)
+
+* `Nested Routing`
+![alt text](image-1.png)
