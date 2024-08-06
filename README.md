@@ -87,3 +87,6 @@ The Architecture introduces a new way of creating React Components,splitting the
 
 * `Dynamic Routing`
 ![alt text](image-2.png)
+
+* `Nested Dynamic Routing`
+![alt text](image-3.png)
