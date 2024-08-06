@@ -90,3 +90,6 @@ The Architecture introduces a new way of creating React Components,splitting the
 
 * `Nested Dynamic Routing`
 ![alt text](image-3.png)
+
+* `catch-all-segment`
+![alt text](image-4.png)
