@@ -93,3 +93,26 @@ The Architecture introduces a new way of creating React Components,splitting the
 
 * `catch-all-segment`
 ![alt text](image-4.png)
+
+## Private Folder
+
+A Private folder indicates that it is a private implementation details and should not be considered by the routing system.
+
+The folder and all its subfolder are excluded from routing.
+
+## Private Folders Contd
+
+* For separating UI logic from routing logic
+* For consistently organizing internal files across a projects.
+* For sorting and grouping files in code editors.
+* And finally,for avoiding potential naming conflicts with future Next.js file conventions.
+
+## Route Groups
+
+Allows us to logically group our routes and project files without affecting the URL path structure.
+
+Let's implement authentication routes.
+
+* Register
+* Login
+* Forget Password
