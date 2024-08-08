@@ -116,3 +116,68 @@ Let's implement authentication routes.
 * Register
 * Login
 * Forget Password
+
+## Layout
+
+* A page is UI that is unique to a route.
+* Layout is UI that is shared between multiple pages in the app.
+
+### How to Create Layout
+
+* You can define a layout bt default exporting a React components from a layout.js or layout.tsx file.
+
+* That component should accept a children prop that will be populated with a child page during rendering.
+
+```bash
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
+
+```
+
+![alt text](image-5.png)
+
+## Routing Metadata
+
+Ensuring  proper search engine optimization (SEO) is crucial for increasing visibility and attrating users.
+
+Next.js introduced the Metadata API which allows you define metadata for each pages.
+
+Metadata ensures accurate and relevant information is displayed when your pages are shared or indexed.
+
+## Configuring Metadata
+
+* Export a static metadata object
+* Export a dynamic generated Metadata function
+
+*Metadata rules*
+
+Both layout.tsx and page.tsx files can export metadata.If defined in a layout,it applies to all pages in the layout,but if defined in a page,it applies only to that page.
+
+Metadata is read in order,from the root level down to the final page level.
+
+When there's metadata in multiple places for the same route,they get combined,but page metadata will replace layout metadata if they have the same properties.
+
+## Templeates
+
+Templates are similar to layout in that they wrap earch child layout or page.
+
+But,with templates,when a user navigates between router that share a template, a new instance of the component is mounted,DOM elements are recreated,state is not preserved,and effocts are re-synchronized.
+
+A templete can be defined by exporting a default react component from a template.tsx file.
+
+Similar to layout,template also should accept a children prop which will render the nested segments, in the router.
+
+## Loging.tsx
+
+This file allows us to create loading states that are displayed to users while a specific route segment's content is loading.
+
+The loading state appears immediately upon navigation,giving users the assurance that the application is responsive and actively loading content.

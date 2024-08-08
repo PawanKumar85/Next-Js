@@ -1,10 +1,18 @@
 
-import React from 'react'
+import Link from "next/link"
 
 const Home = () => {
     return (
-        <div className='flex items-center justify-center min-h-screen'>
-            <h1 className='text-red-900'>Welcome home!!</h1>
+        <div>
+            <h1>Welcome home!!</h1>
+            <Link href="/blog">Blog</Link>
+            <br />
+            <Link href="/products">Products</Link>
+            <br />
+            <Link href="/login">Login</Link>
+            {" "}
+            <Link href="/register">Sign Up</Link>
+
         </div>
     )
 }
